@@ -196,7 +196,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="CLR"
-            android:onClick="onDigit"
+            android:onClick="onClear"
             android:layout_marginLeft="3dp"
             app:backgroundTint="@color/btn_color"
             />
