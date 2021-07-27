@@ -12,7 +12,11 @@
         android:layout_height="250dp"
         android:background="#efefef"
         android:textSize="48sp"
-        android:maxLength="12"/>
+        android:maxLength="12"
+        android:gravity="right|center_vertical|bottom"
+        android:padding="10dp"
+        android:text="0"
+        />
 
     <LinearLayout
     android:layout_width="match_parent"
@@ -59,7 +63,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:text="/"
-        android:onClick="onDigit"
+        android:onClick="onOperator"
         android:layout_marginLeft="3dp"
         app:backgroundTint="@color/btn_color"
         />
@@ -108,7 +112,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="*"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_marginLeft="3dp"
             app:backgroundTint="@color/btn_color"
             />
@@ -157,7 +161,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="-"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_marginLeft="3dp"
             app:backgroundTint="@color/btn_color"
             />
@@ -206,7 +210,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="+"
-            android:onClick="onDigit"
+            android:onClick="onOperator"
             android:layout_marginLeft="3dp"
             app:backgroundTint="@color/btn_color"
             />
@@ -229,7 +233,7 @@
             android:layout_height="match_parent"
 
             android:text="="
-            android:onClick="onDigit"
+            android:onClick="onEqeal"
             app:backgroundTint="@color/btn_color"
             />
 
